@@ -1,0 +1,407 @@
+body{
+    margin: 0px;
+    font-family: "Poppins";
+    background-color: black;
+}
+
+.main{
+    background-image: linear-gradient(#000000e0, #00000000), url(https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        height: 90vh;
+    }
+}
+
+.logo{
+    width: 150px;
+    height: 40px;
+}
+
+header{
+    padding-top: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    unicode-bidi: isolate;
+}
+
+select{
+    background-color: #0000008c;
+    outline: none;
+    height: 38px;
+    width: 90px;
+    border-radius: 6px;
+    border: 1px solid #92a6e88c;
+    padding-left: 10px;
+}
+
+.nav-sign-in-btn{
+    background-color: red;
+    border-radius: 6px;
+    height: 35px;
+    width: 90px;
+    border: none;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+.box{
+    background-color: #00000070;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1{
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+.hero p {
+    margin-top: 0%;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .hero p {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .input-container{
+        flex-direction: column;
+    }
+}
+
+.input {
+    height: 30px;
+    width: 300px;
+    background-color: #0000007f;
+    border: 1px solid #ffffff61;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .input{
+        width: 500px;
+    }
+}
+
+.get-start-btn{
+    background-color: red;
+    border-radius: 6px;
+    height: 48px;
+    width: 120px;
+    border: none;
+    font-size: 18px;
+}
+
+hr {
+    margin-top: 0px;
+    border: 5px solid #7f7669;
+}
+
+.first,
+.third {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    gap: 36px;
+}
+
+@media screen and (max-width: 768px) {
+    .first,
+    .third{
+        margin-top: 24px;
+        flex-direction: column;
+    }
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .text-container {
+        width: 90%;
+        margin-bottom: 0px;
+    }
+}
+
+.text-container h1 {
+    font-size: 36px;
+}
+
+@media screen and (max-width: 768px) {
+    .text-container h1{
+        text-align: center;
+    }
+}
+
+.text-container p {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .text-container p{
+        text-align: center;
+        order: 1;
+    }
+}
+
+.sec-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.sec-img video {
+    height: 280px;
+    width: 380px;
+}
+
+@media screen and (max-width: 768px) {
+    .sec-img video{
+        width: 500px;
+        margin-bottom: 100px;
+    }
+}
+
+.second{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+}
+
+@media screen and (min-width: 768px) {
+    .second{
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .second {
+        flex-direction: column;
+    }
+}
+
+.second-bottom{
+    background-image: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg');
+    background-size: cover;
+    height: 50%;
+    width: 400px;
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .second-bottom{
+        order: 1;
+        width: 600px;
+        height: 100%;
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .second-text-container{
+        order: 2;
+    }
+}
+
+.second-bottom-img-container{
+    display: flex;
+    align-items: center;
+    border: 2px solid #30343661;;
+    border-radius: 10px;
+    padding-left: 16px;
+    gap: 24px;
+    margin-top: 200px;
+    margin-left: 10px;
+    background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .second-bottom-img-container{
+        margin-top: 350px;
+    }
+}
+
+
+.second-bottom-img-container img {
+    width: 50px;
+}
+
+.third-sec-img img{
+    width: 350px;
+}
+
+@media screen and (max-width: 768px) {
+    .third-sec-img img{
+        width: 600px;
+    }
+}
+
+.fourth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: black;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+    .fourth{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fourth-sec-img{
+        order: 2;
+    }
+}
+
+.fourth-sec-img img{
+    width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .fourth-sec-img img {
+        width: 600px;
+    }
+}
+
+.question-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 36px;
+    background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .question-section{
+        padding: 0px;
+        padding-bottom: 50px;
+    }
+}
+
+.question-head{
+    font-size: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .question-head{
+        font-size: 36px;
+    }
+}
+
+.questions-container{
+    list-style-type: none;
+    padding-left: 0px;
+    width: 50%;
+}
+
+
+.questions-container li {
+    background-color: #323131d9;
+    padding: 16px;
+    width: 100%;
+    margin: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+
+.footer{
+    background-color: black;
+    padding: 36px;
+}
+
+
+.footer-list{
+    padding-left: 0px;
+    list-style-type: disc;
+    width: 20%;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-list{
+        width: 40%;
+    }
+}
+
+.footer-list li {
+    margin: 16px;
+}
+
+.footer-list li a {
+    color: #9a9083;
+    font-size: 18px;
+}
+
+.footer-list-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
