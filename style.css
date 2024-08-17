@@ -6,11 +6,10 @@ body{
 }
 
 .main{
-    background-image: linear-gradient(#000000e0, #00000000), url(https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY.jpg);
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #000000e0, #00000000), url('https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY.jpg');
     background-size: cover;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -19,19 +18,23 @@ body{
     }
 }
 
-.logo{
+.logo {
     width: 150px;
     height: 40px;
 }
 
-header{
-    padding-top: 24px;
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 120px;
+        height: 35px;
+    }
 }
 
-nav {
+
+.nav {
     display: flex;
+    padding-top: 24px;
     justify-content: space-around;
-    unicode-bidi: isolate;
 }
 
 .select{
@@ -57,37 +60,27 @@ nav {
 }
 
 .box{
-    background-color: #00000070;
-    position: absolute;
-    top: 0;
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hero h1{
+.box h1{
     font-size: 44px;
     font-weight: 700;
     text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-    .hero h1 {
+    .box h1 {
         font-size: 30px;
     }
 }
 
-.hero p {
+.box p {
     margin-top: 0%;
     font-size: 22px;
     font-weight: 700;
@@ -95,7 +88,7 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-    .hero p {
+    .box p {
         font-size: 18px;
         margin-top: 8px;
     }
@@ -129,7 +122,7 @@ nav {
 
 @media screen and (max-width: 768px) {
     .input{
-        width: 500px;
+        width: 80%;
     }
 }
 
@@ -165,7 +158,9 @@ hr {
     .third{
         margin-top: 24px;
         flex-direction: column;
+        min-height: 80vh;
     }
+    
 }
 
 .text-container {
@@ -219,7 +214,7 @@ hr {
 
 @media screen and (max-width: 768px) {
     .sec-img video{
-        width: 500px;
+        width: 80%;
         margin-bottom: 100px;
     }
 }
@@ -230,12 +225,11 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 42px;
 }
 
 @media screen and (min-width: 768px) {
     .second{
-        height: 100vh;
+        min-height: 80vh;
     }
 }
 
@@ -248,20 +242,32 @@ hr {
 .second-bottom{
     background-image: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg');
     background-size: cover;
-    height: 50%;
     width: 400px;
-    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    padding-bottom: 16px;
 }
 
 @media screen and (max-width: 768px) {
     .second-bottom{
         order: 1;
-        width: 600px;
+        width: 100%;
         height: 100%;
         margin-top: 0px;
         margin-bottom: 100px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .second-bottom{
+        background-image: url(https://w0.peakpx.com/wallpaper/521/33/HD-wallpaper-stranger-things-eleven-millie-netflix-stranger-things.jpg);
+        background-size: cover;
+        width: 70%;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .second-text-container{
@@ -279,12 +285,20 @@ hr {
     margin-top: 200px;
     margin-left: 10px;
     background-color: black;
+    width: 70%;
 }
 
 @media screen and (max-width: 768px) {
     .second-bottom-img-container{
         margin-top: 350px;
+        width: 80%;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .second-bottom-img-container {
+        width: 116%;
+        }
 }
 
 
@@ -292,13 +306,13 @@ hr {
     width: 50px;
 }
 
-.third-sec-img img{
+.third-sec-img {
     width: 350px;
 }
 
 @media screen and (max-width: 768px) {
-    .third-sec-img img{
-        width: 600px;
+    .third-sec-img{
+        width: 80%;
     }
 }
 
@@ -313,6 +327,7 @@ hr {
 
 @media screen and (max-width: 768px) {
     .fourth{
+        min-height: 80vh;
         flex-direction: column;
     }
 }
@@ -323,13 +338,13 @@ hr {
     }
 }
 
-.fourth-sec-img img{
+.fourth-sec-img {
     width: 300px;
 }
 
 @media screen and (max-width: 768px) {
-    .fourth-sec-img img {
-        width: 600px;
+    .fourth-sec-img {
+        width: 80%;
     }
 }
 
@@ -338,14 +353,15 @@ hr {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 36px;
     background-color: black;
+    padding: 36px;
 }
 
 @media screen and (max-width: 768px) {
     .question-section{
         padding: 0px;
         padding-bottom: 50px;
+        text-align: center;
     }
 }
 
@@ -360,6 +376,10 @@ hr {
 }
 
 .questions-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     list-style-type: none;
     padding-left: 0px;
     width: 50%;
