@@ -306,6 +306,12 @@ hr {
     width: 50px;
 }
 
+.download-icon{
+    margin-left: auto;
+    margin-right: 16px;
+    order: 3;
+}
+
 .third-sec-img {
     width: 350px;
 }
