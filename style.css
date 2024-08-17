@@ -34,7 +34,7 @@ nav {
     unicode-bidi: isolate;
 }
 
-select{
+.select{
     background-color: #0000008c;
     outline: none;
     height: 38px;
@@ -42,6 +42,7 @@ select{
     border-radius: 6px;
     border: 1px solid #92a6e88c;
     padding-left: 10px;
+    color: #ffffff;
 }
 
 .nav-sign-in-btn{
@@ -52,6 +53,7 @@ select{
     border: none;
     margin-left: 16px;
     font-size: 18px;
+    color: #ffffff;
 }
 
 .box{
@@ -138,6 +140,7 @@ select{
     width: 120px;
     border: none;
     font-size: 18px;
+    color: #ffffff;
 }
 
 hr {
